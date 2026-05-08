@@ -1,29 +1,20 @@
-# 🔐 Secure Cryptography Vault
+# 🔐 Secure Cryptography Vault v2.0
 
-Welcome to the *Secure Cryptography Vault*, a Python-based security tool designed to demonstrate the power of modern encryption standards. This project focuses on protecting data privacy through advanced cryptographic techniques.
+A Python-based tool developed for file encryption and decryption using the *AES-256 (Fernet)* standard. This project was recently upgraded to support full file security following the *Securing Data* concepts from Harvard's CS50.
 
-## 🌟 Overview
-In the field of *Cybersecurity* and *Digital Forensics*, ensuring data integrity and confidentiality is paramount. This tool implements the *AES-256 (Fernet)* encryption standard to transform sensitive information into secure ciphertext and back.
+## 🚀 Features
+- *File Encryption:* Secure any .txt or document file by converting it into a .enc file.
+- *File Decryption:* Restore your original files using a unique secret key.
+- *Key Management:* Automatically generates and manages a secret.key file for symmetric encryption.
+- *CLI Interface:* User-friendly command-line interface developed and tested on *Kali Linux*.
 
-## 🛠️ Key Features
-- *Symmetric Encryption:* Uses a single, secure private key for both encryption and decryption.
-- *AES-256 Standard:* Implements the Fernet specification, which is built on top of the Advanced Encryption Standard (AES) in CBC mode.
-- *Error Handling:* Robust Python logic to ensure data is processed securely without leaks.
-- *Clean Architecture:* Developed using an Object-Oriented Programming (OOP) approach for scalability.
+## 🛠️ How it Works
+1. The script generates a symmetric key using the cryptography library.
+2. When encrypting, the file's binary data is processed and saved in an encrypted format.
+3. To decrypt, the tool reads the .enc file and uses the same secret.key to restore the original content.
 
-## 🚀 How It Works
-1. *Key Generation:* The tool generates a unique cryptographic key.
-2. *Encryption:* Plaintext input is encoded and encrypted into a secure byte string.
-3. *Decryption:* Using the original key, the tool decodes the ciphertext back into its readable format.
-
-## 💻 Practical Application
-This tool is essential for:
-- Securing sensitive logs in digital forensics investigations.
-- Understanding the fundamentals of *Data-at-Rest* protection.
-- Learning how modern communication apps (like WhatsApp or Telegram) secure user data.
+## 📝 Background
+This tool was created as part of my cybersecurity learning journey at *KL University*. Version 2.0 specifically focuses on implementing secure data practices and handling file-system operations in Python.
 
 ---
-Developed as part of my ongoing learning journey in Data Science and AI at **KL University*.*
-Special thanks to **W3Schools* for their excellent resources on Python and Cryptography.*
-
-#Cybersecurity #Cryptography #Python #InfoSec #EngDalaa
+Developed by Eng. Dalaa 🕵️‍♀️💻
